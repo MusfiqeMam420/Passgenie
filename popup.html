@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extention</title>
+    <!--Css Link-->
+    <link rel="stylesheet" href="./assest/css/style.min.css" />
+    <!--Niomaan CDN link-->
+    <link
+      rel="stylesheet"
+      href="./assest/niomaan-1.0.0/dist/css/niomaan.key.css"
+    />
+    <!--Icon link-->
+    <link rel="stylesheet" href="./assest/bangalicon-v1.0/style.css" />
+  </head>
+  <body>
+    <div class="main_po">
+      <div class="main__pass__area">
+        <div class="input__area">
+          <input type="text" class="pass__input" disabled />
+          <span class="copy__btn"><i class="bg-clipboard-outline-1"></i></span>
+        </div>
+
+        <div class="color__identity"></div>
+      </div>
+      <div class="slider__main">
+        <div class="pass-length">
+          <div class="details">
+            <label class="title">Password Length</label>
+            <span></span>
+          </div>
+          <input type="range" min="1" max="60" value="17" step="1" />
+        </div>
+      </div>
+      <div class="pass-settings">
+        <ul class="options">
+          <li class="option">
+            <input type="checkbox" id="lowercase" checked />
+            <label for="lowercase">Lowercase</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase">Uppercase</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="numbers" checked />
+            <label for="numbers">Numbers</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="symbols" checked />
+            <label for="symbols">Symbols</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="exc-duplicate" />
+            <label for="exc-duplicate">Duplicate</label>
+          </li>
+          <li class="option">
+            <input type="checkbox" id="spaces" />
+            <label for="spaces">Spaces</label>
+          </li>
+        </ul>
+        <button class="generate-btn">Generate Password</button>
+      </div>
+      <footer>
+        <div class="footer__container">
+          <div class="footer__bottom">
+            <span class="f-b-r">
+              <a href="http://passgenie.site/">Passgenie</a>
+            </span>
+            <span>Version 0.0.1</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!----Javascript Link-->
+    <script src="./assest/js/main.min.js"></script>
+  </body>
+</html>

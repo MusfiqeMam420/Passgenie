@@ -1,0 +1,293 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*====== Color Variable Start ======*/
+
+:root {
+  /*------- white Mode Color -------*/
+  ---color--one: #fff;
+  ---color--tow: #f0f0f0;
+  ---color--three: #484848;
+  ---color--four: #313131;
+  ---color--five: #1cb85f;
+  ---color--six: #1ba355;
+
+  /*------- Font and typography -------*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  ---font: "Inter", sans-serif;
+
+  /*------- Font Weight-------*/
+  ---font-regular: 400;
+  ---font-medium: 500;
+  ---font-semi-bold: 600;
+}
+
+html {
+  border-radius: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_po {
+  width: 300px;
+  height: 410px;
+  border-radius: 5px;
+  z-index: 555;
+  background-color: var(---color--one);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+/*====== Color Variable End ======*/
+
+/*====== Content Text Start ======*/
+.main__content__text {
+  text-align: center;
+  font-family: var(---font);
+}
+
+.main__content__titile {
+  color: var(---color--four);
+  font-weight: var(---font-semi-bold);
+  font-size: 30px;
+}
+.main__content__prgh {
+  padding: 15px 0px;
+  color: var(---color--three);
+  font-size: 15px;
+  font-weight: var(---font-medium);
+}
+/*====== Content Text End ======*/
+/*====== Mian Area Start ======*/
+.main__pass__area {
+  position: relative;
+}
+.input__area {
+  display: flex;
+  position: relative;
+  background-color: #d4eae5;
+  z-index: 888;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+}
+.input__area#weak {
+  background: #eedbdb;
+}
+.input__area#medium {
+  background: #f2edd8;
+}
+.input__area#strong {
+  background-color: #d4eae5;
+}
+.pass__input {
+  background: transparent;
+  width: 90%;
+  height: 70px;
+  outline: none;
+  border: none;
+
+  padding: 0px 10px;
+  font-size: 20px;
+  color: var(---color--four);
+  z-index: -1;
+  border-radius: 7px 7px 0px 0px;
+}
+
+.pass__input::placeholder {
+  color: var(---color--four);
+}
+.copy__btn {
+  padding: 15px 5px;
+  z-index: 555;
+  font-size: 30px;
+  color: var(---color--four);
+  position: absolute;
+  border-radius: 7px 7px 0px 0px;
+  right: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.copy__btn#weak {
+  background: #eedbdb;
+}
+.copy__btn#medium {
+  background: #f2edd8;
+}
+.copy__btn#strong {
+  background-color: #d4eae5;
+}
+.copy__btn:hover {
+  color: var(---color--six);
+}
+.color__identity {
+  background: var(---color--five);
+  width: 100%;
+  height: 7px;
+  z-index: 999;
+  position: absolute;
+  bottom: 0px;
+}
+
+.color__identity#weak {
+  background: #e64a4a;
+}
+.color__identity#medium {
+  background: #f1c80b;
+}
+.color__identity#strong {
+  background: var(---color--five);
+}
+/*====== Mian Area End ======*/
+
+/*====== Slider Arae Start ======*/
+.slider__main {
+  width: 100%;
+  font-family: var(---font);
+}
+.pass-length {
+  margin: 10px;
+}
+.pass-length .details {
+  display: flex;
+  justify-content: space-between;
+  color: var(---color--three);
+  padding: 2px;
+  font-size: 13px;
+}
+.pass-length input {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background-color: var(---color--three);
+  border-radius: 7px;
+}
+.pass-length input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 6px;
+  background-color: var(---color--four);
+  cursor: pointer;
+  outline: none;
+}
+/*====== Slider Arae End ======*/
+/*====== Setting Arae Start ======*/
+.pass-settings {
+  background-color: transparent;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.pass-settings .options {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  font-family: var(---font);
+}
+.pass-settings .options .option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  width: calc(100% / 2);
+}
+.options .option:first-child {
+  pointer-events: none;
+}
+.options .option:first-child input {
+  opacity: 0.7;
+}
+.options .option input[type="checkbox"] {
+  display: none;
+}
+.options .option label {
+  cursor: pointer;
+  color: var(---color--four);
+  width: 130px;
+  padding: 15px 0px;
+  text-align: center;
+  background-color: var(---color--tow);
+  user-select: none;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.options .option input[type="checkbox"]:checked ~ label {
+  background: var(---color--six);
+  color: var(---color--one);
+  font-weight: var(---font-semi-bold);
+}
+
+.generate-btn {
+  width: 96%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(---color--three);
+  font-size: 1.06rem;
+  padding: 20px;
+  border-radius: 7px;
+  margin: 5px;
+  font-family: var(---font);
+  transition: 0.3s;
+}
+.generate-btn:hover {
+  background-color: var(---color--four);
+}
+/*====== Setting Arae End ======*/
+
+footer {
+  float: left;
+  font-family: var(---font);
+  color: var(---color--three);
+
+  width: 100%;
+  padding: 10px 20px;
+}
+.footer__top {
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(---color--tow);
+  border-radius: 2px;
+  padding-bottom: 15px;
+}
+.footer__top ul {
+  padding: 0;
+  margin: 0;
+}
+.footer__top li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer__top a {
+  color: var(---color--three);
+  font-size: 13px;
+  text-decoration: none;
+}
+.footer__top a:hover {
+  color: var(---color--five);
+}
+.f-b-r {
+  float: right;
+  font-size: 11px;
+}
+.f-b-r a {
+  color: var(---color--three);
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.f-b-r a:hover {
+  color: var(---color--five);
+}
+.footer__bottom {
+  font-size: 11px;
+}
